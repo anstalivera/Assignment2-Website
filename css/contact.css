@@ -1,0 +1,157 @@
+/* Name: Mary Ansta Livera  Student Number: 9029601 */
+.header, .footer{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 6px;
+    background-image: linear-gradient(rgb(163, 62, 51), rgb(228, 231, 130), rgb(163, 62, 51));
+}
+.header{
+    padding: 1rem;
+    margin: 5px 5px;
+}
+.footer{
+    background-color: rgba(229, 239, 213, 0.5);
+    border: 1px solid black;
+    color: #1f2122;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 6px;
+    padding: 0.9rem;
+    margin: 20px;
+    background-image: linear-gradient(rgb(163, 62, 51), rgb(228, 231, 130), rgb(163, 62, 51));
+    background-color: #373076;
+    color: rgb(41, 31, 31);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+nav{
+    background-color: rgb(227, 176, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0px 10px;
+    align-items: end;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+    font-size: large;
+    margin: 0px 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+nav a:hover{
+    color: rgb(166, 166, 166);
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    position: relative;
+    padding: 0.5rem;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #ddf0f0;
+    min-width: 150px;
+}
+nav ul li a{
+    font-size: 18px;
+}
+nav ul li:hover > ul{
+    display: block;
+    z-index: 1;
+}
+nav ul li ul li a{
+    color: rgb(33, 33, 52);
+    display: inline-block;
+}
+nav ul li ul li a:hover{
+    color: black;
+    background-color: rgb(227, 176, 176);
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px; 
+}
+main{
+    width: 100%;
+    padding: 0.63rem;
+}
+aside{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #caf0a2;
+    padding: 0.13rem 1.25rem;
+    border-radius: 4px;
+    height: 500px;
+    box-sizing: border-box;
+    top: 10px;
+    margin-bottom: 10px;
+    background-image: url("../images/image4.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+aside a:hover{
+    color: #2854b4;
+}
+aside ul{
+    list-style-type: none;
+}
+aside ul li{
+    list-style: none;
+    line-height: 4em;
+    font-size: 1.3rem;
+}
+aside ul > li > a{
+    text-decoration: none;
+    color: rgb(35, 115, 42);
+    font-weight: bolder;
+    background-color: beige;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+h2{
+    color: rgb(180, 28, 119);
+    font-size: 1.5rem;
+}
+aside h3{
+    background-color: beige;
+    color: rgb(197, 15, 15);
+    font-size: 1.5em;
+    padding: 0.52rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px){
+    .container{
+        grid-template-columns: 1fr; 
+    }
+
+    aside {
+        background-image: url(../images/image_new.jpg);
+        grid-column: 1 / 2; 
+    }
+}
+@media (max-width: 500px){
+    .container{
+        grid-template-columns: 1fr; 
+    }
+
+    aside{
+        background-image: url(../images/image8.jpeg);
+        grid-column: 1 / 2; 
+    }
+}

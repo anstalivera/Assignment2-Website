@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Biography of Famous Scientist Dr.APJ Abdul Kalam ">
+    <meta name="keywords" content="Dr.APJ Abdul Kalam,Biography,India,aerospace,Scientist,Achievements,quotes,images">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <!--Name:Mary Ansta Livera  Student Number:9029601-->
+    <script type="text/javascript">
+        function handleForm() {
+                'use strict'
+
+                const forms = document.querySelectorAll('.needs-validation')
+
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+                return false;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>DR.APJ ABDUL KALAM</h1>
+    </header>
+    <nav>
+        <a href="">Contact Us form</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>
+    </nav>
+    <div class="container">
+        <main>
+            <section>
+                <form class="w-75 m-auto needs-validation" novalidate onsubmit="return handleForm()">
+                    <fieldset class="p-5 border border-3 border-danger rounded-3">
+                        <legend class="fs-3 fw-bold text-danger">CONTACT US</legend>
+
+                        <div class="my-3">
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="my-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email id" required>
+                        </div>
+                        <div class="my-3">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="my-3">
+                            <label class="form-label" for="date">Choose Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="my-3">
+                            <label class="form-label" for="help">Choose what help you need</label>
+                            <select class="form-select" id="help" required>
+                                <option value="category">Select a category</option>
+                                <option value="technical">Technical support</option>
+                                <option value="general">General Questions</option>
+                                <option value="Subscription">Subscription support</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <label class="form-label" for="feedback">Feedback</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your Feedback" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <input type="checkbox" class="form-check-input" id="cb">
+                            <label for="" class="form-check-label">Submit Data</label>
+                        </div>
+
+                        <div class="text-end my-3">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <aside>
+            <h3>Additional Information</h3>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Wikipedia</a></li>
+                <li><a href="https://www.britannica.com/biography/A-P-J-Abdul-Kalam" target="_blank">Britannica</a></li>
+                <li><a href="https://www.hindustantimes.com/lifestyle/art-culture/apj-abdul-kalams-9th-death-anniversary-10-eye-opening-quotes-by-indias-missile-man-101722063975956.html" target="_blank">News</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p>&copy; Mary Ansta Livera 2024</p>
+    </footer>
+</body>
+</html>
